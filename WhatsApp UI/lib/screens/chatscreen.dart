@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:whatsapp_mal_tutorial/components/chat%20tile.dart';
 import 'package:whatsapp_mal_tutorial/components/divider.dart';
-import 'package:whatsapp_mal_tutorial/components/wa%20tab.dart';
 import 'package:whatsapp_mal_tutorial/screens/callscreen.dart';
 import 'package:whatsapp_mal_tutorial/screens/statusscreen.dart';
 import 'package:whatsapp_mal_tutorial/whatsapp data.dart';
@@ -50,17 +49,105 @@ class ChatScreen extends StatelessWidget {
             ),
           ),
           actions: [
-            WhatsAppTabs(
-              label: 'CHATS',
-              fn: () => Navigator.pushNamed(context, ChatScreen.id),
+            Container(
+              width: 115,
+              decoration: BoxDecoration(
+                border: Border(
+                  bottom: BorderSide(
+                    color: Colors.white,
+                    width: 5,
+                  ),
+                ),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Padding(
+                    padding: EdgeInsets.all(
+                      8,
+                    ),
+                    child: GestureDetector(
+                      onTap: () {},
+                      child: Text(
+                        'CHATS',
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  )
+                ],
+              ),
             ),
-            WhatsAppTabs(
-              label: 'STATUS',
-              fn: () => Navigator.pushNamed(context, StatusScreen.id),
+            Container(
+              width: 115,
+              decoration: BoxDecoration(
+                border: Border(
+                  bottom: BorderSide(
+                    color: Colors.transparent,
+                    width: 5,
+                  ),
+                ),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Padding(
+                    padding: EdgeInsets.all(
+                      8,
+                    ),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(context, StatusScreen.id);
+                      },
+                      child: Text(
+                        'STATUS',
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.white.withOpacity(0.5),
+                        ),
+                      ),
+                    ),
+                  )
+                ],
+              ),
             ),
-            WhatsAppTabs(
-              label: 'CALLS',
-              fn: () => Navigator.pushNamed(context, CallScreen.id),
+            Container(
+              width: 115,
+              decoration: BoxDecoration(
+                border: Border(
+                  bottom: BorderSide(
+                    color: Colors.transparent,
+                    width: 5,
+                  ),
+                ),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Padding(
+                    padding: EdgeInsets.all(
+                      8,
+                    ),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(context, CallScreen.id);
+                      },
+                      child: Text(
+                        'CALLS',
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.white.withOpacity(0.5),
+                        ),
+                      ),
+                    ),
+                  )
+                ],
+              ),
             ),
           ],
         ),
