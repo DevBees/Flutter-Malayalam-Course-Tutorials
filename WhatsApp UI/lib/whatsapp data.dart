@@ -89,4 +89,88 @@ class Data {
       false
     ]
   };
+  //name,profile pic,vid or aud call, missed call or not, incoming or outgoing, time, last value or not
+  var calls = {
+    0: [
+      'William Anders',
+      'images/boy.png',
+      0,
+      false,
+      false,
+      '20 minutes ago',
+      false,
+    ],
+    1: [
+      'Mom',
+      'images/cliffside-unsplash.jpg',
+      0,
+      false,
+      true,
+      '45 minutes ago',
+      false,
+    ],
+    2: [
+      'Hannah',
+      'images/woman2.png',
+      1,
+      false,
+      false,
+      '55 minutes ago',
+      false,
+    ],
+    3: [
+      'Dad',
+      'images/man.png',
+      0,
+      true,
+      true,
+      '58 minutes ago',
+      false,
+    ],
+    4: [
+      'Cayne Don',
+      'images/flower.jpg',
+      0,
+      true,
+      true,
+      'Today 04:30 pm',
+      false,
+    ],
+    5: [
+      'Abby Gale',
+      'images/plant-unsplash.jpg',
+      1,
+      true,
+      true,
+      'Today 03:30 pm',
+      false,
+    ],
+    6: [
+      'William Anders',
+      'images/boy.png',
+      0,
+      false,
+      true,
+      'Today 12:15 pm',
+      false,
+    ],
+    7: [
+      'William Anders',
+      'images/boy.png',
+      1,
+      true,
+      true,
+      'Today 12:10 pm',
+      false,
+    ],
+    8: [
+      'Hannah',
+      'images/woman2.png',
+      1,
+      false,
+      true,
+      'Today 11:30 pm',
+      true,
+    ]
+  };
 }
