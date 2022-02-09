@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_mal_tutorial/screens/chatroom%20screen.dart';
 
 class ChatTile extends StatelessWidget {
   final String name;
@@ -14,7 +15,15 @@ class ChatTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      onTap: () {},
+      onTap: () => Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => ChatRoomScreen(
+            name: name,
+            img: img,
+          ),
+        ),
+      ),
       leading: img != null
           ? Padding(
               padding: EdgeInsets.only(right: 8.0),
