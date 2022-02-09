@@ -173,4 +173,28 @@ class Data {
       true,
     ]
   };
+  //message, who is sender
+  var chatMsgs = {
+    0: [
+      'Hey how are you',
+      true,
+    ],
+    1: [
+      'Hey I am fine been a while',
+      false,
+    ],
+    2: [
+      'How are you',
+      false,
+    ],
+    3: ['I\'m fine.', true],
+    4: [
+      'What have you been upto these days!',
+      true,
+    ],
+    5: [
+      'I have been learning flutter from youtube channels',
+      false,
+    ]
+  };
 }
